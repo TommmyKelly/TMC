@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   instagramLinks.forEach((link) => {
     link.href = instagramProfileUrl;
   });
+  //test
 
   console.log(
     `Trail Blazer Pipeline: Linked navigation tunnels to ${instagramProfileUrl}`,
