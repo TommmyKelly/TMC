@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Galleries | Tullow Mountaineering Club</title>
+
+    <!-- 1. Bootstrap 5 Framework Definition -->
+    <link href="https://jsdelivr.net" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- 2. Typography Connections -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- 3. Local Design Layer -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .img-gallery-cover {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            background-color: #e4eae2;
+        }
+
+        .gallery-card {
+            background: #fdfbf7;
+            border: 1px solid rgba(36, 70, 34, 0.08);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(36, 70, 34, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🧭 Main Club Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold font-serif text-success-light" href="index.html">🌲 Tullow Mountaineering
+                Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="gallery.html">Gallery View</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 📸 Main Gallery Layout Window -->
+    <main class="container my-5 py-4">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold text-forest">Club Expedition Log</h1>
+            <p class="text-muted">Gallery of our recent mountain hikes</p>
+            <div class="section-accent-line mx-auto d-block"></div>
+        </div>
+
+        <!-- 🚀 MOVE: Full-width Social Funnel Banner (Now at the top as 1 column) -->
+        <div class="instagram-sidebar-teaser rounded-4 text-center p-4 mb-5 mx-auto" style="max-width: 800px;">
+            <h4 class="fw-bold text-dark mb-2">Looking for More Action?</h4>
+            <p class="text-secondary small mb-3">We upload video reels from our ascents to instagram</p>
+            <a href="#" target="_blank" class="btn btn-instagram-glow text-uppercase instagram-target-link">📸 Go to
+                Official Instagram Page</a>
+        </div>
+
+        <!-- Responsive Card Grid Layout (Re-aligned side by side beneath the banner) -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+
+            <!-- 📷 GALLERY CARD 1 -->
+            <div class="col">
+                <div class="card h-100 gallery-card">
+                    <img src="https://scontent-dub4-1.cdninstagram.com/v/t51.82787-15/883300360_18099783626138306_6691201796790220066_n.webp?_nc_cat=107&ig_cache_key=NDAyMTAyOTY2MTU5NTIzMjk2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=rlEb5hGMUzcQ7kNvwETVtA7&_nc_oc=AdrrWuveDrBfHNJ3xE_elIQbm66ieOIaJIQBEYJQwMdt9-emJlZXDV5NmD1gyG6PcCk&_nc_zt=23&_nc_ht=scontent-dub4-1.cdninstagram.com&_nc_gid=7hiJz6NIjpvid0zCU3onNQ&_nc_ss=7b6a8&oh=00_AQS8o5V728osDaC-hPW8CkQc5mj-YStvkr0ua2OlRM2nVg&oe=6AEE787E"
+                        class="img-gallery-cover" alt="Blackstairs Mountains Loop">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-forest mb-2">Mount Leinster Circuit</h5>
+                            <p class="card-text text-muted small mb-0">A scenic look at our hike crossing the
+                                high heather along the Carlow and Wexford borders.</p>
+                        </div>
+                        <a href="https://www.instagram.com/tullowmountaineeringclub/p/DfNkaHljHqL/" target="_blank"
+                            class="action-link-brown small fw-bold mt-3 d-inline-block">View
+                            Post on Instagram →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 📷 GALLERY CARD 2 -->
+            <div class="col">
+                <div class="card h-100 gallery-card">
+                    <img src="https://scontent-dub4-1.cdninstagram.com/v/t51.82787-15/872676512_18098899856138306_5317275316027474785_n.webp?_nc_cat=108&ig_cache_key=NDAxODc3MTkwODU0NTk4NDE0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7iOXhi-xJiUQ7kNvwEWx6IT&_nc_oc=AdqaqFl0c1HEAOHm6j_rCaqOozHovr4ElCEXfOoBbM5l6bcm7C4-HMi_D6-grPTAJSI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dub4-1.cdninstagram.com&_nc_gid=-zK6LTA-aGu5OkFyG2G7-w&_nc_ss=7322e&oh=00_AQTVdL3aCEV-gjJAnCmFeNqa8vdKyh4ZOO0xCgZnHjE-WA&oe=6AEE55FB"
+                        class="img-gallery-cover" alt="Technical Training Log">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="fw-bold text-forest mb-2">Tullow Mountaineering Club</h5>
+                            <p class="card-text text-muted small mb-0">Welcome to Tullow Mountaineering Club</p>
+                        </div>
+                        <a href="https://www.instagram.com/tullowmountaineeringclub/p/DfFi8IqM7aQ/" target="_blank"
+                            class="action-link-brown small fw-bold mt-3 d-inline-block">View
+                            Post on Instagram →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 text-center py-4 mt-5">
+        <div class="container small">
+            <p class="mb-0">&copy; 2026 Tullow Mountaineering Club. Hosted securely and delivered fast via GitHub Pages.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://jsdelivr.net"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
