@@ -1,6 +1,5 @@
 // 🛠️ CENTRAL CONFIGURATION: Put your real Instagram link here!
-const instagramProfileUrl =
-  "https://www.instagram.com/tullowmountaineeringclub/";
+const instagramProfileUrl = "https://instagram.com/tullowmountaineeringclub/";
 
 // Wait until the browser fully reads and constructs the HTML document
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   console.log(
-    `Trail Blazer Pipeline: Linked navigation tunnels to ${instagramProfileUrl}`
+    `Trail Blazer Pipeline: Linked navigation tunnels to ${instagramProfileUrl}`,
   );
 });
